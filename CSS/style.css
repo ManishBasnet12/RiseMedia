@@ -630,19 +630,22 @@ a {
 
 
 .cli-carousel-single {
-    padding: 6rem 0;
+    padding: 10rem 0;
 }
 
 
 .carousel3 .swiper-slide img {
     width: 120px;
-
     margin: auto;
 }
 
 .carousel3 .swiper-slide {
     opacity: 0.85;
     transition: all 300ms ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .carousel3 .swiper-slide:hover {
