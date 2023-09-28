@@ -98,7 +98,7 @@ function reloadNavigationBarIfNeeded() {
 	const targetOffset = targetContainer.getBoundingClientRect().top;
 	const offset = window.pageYOffset;
 
-	if (targetOffset >= 220) {
+	if (targetOffset >= 0) {
 		if (!navigation.classList.contains('minimal')) {
 			navigation.classList.add('minimal');
 		}
@@ -116,4 +116,4 @@ window.onhashchange = function () {
 		document.title = "Dropover - Easier Drag and Drop on your Mac.";
 	}
 }
-;
+	;

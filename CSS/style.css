@@ -162,7 +162,7 @@ a {
     right: 0;
     left: 0;
     z-index: 99;
-    transition: all 200ms ease-in-out;
+    transition: all 200ms ease-out;
 }
 
 .headerNavigation {
@@ -173,6 +173,27 @@ a {
 .hero-section {
     width: 100%;
     height: 100vh;
+    min-height: 500px;
+    position: relative;
+}
+
+.hero-section .hero-content {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+
+.hero-content h4 {
+    font-size: clamp(30px, 5vw, 60px);
+    font-weight: 700;
+    color: rgb(239, 253, 255);
+    margin-bottom: 1rem;
+    line-height: 1.3;
+    letter-spacing: 1.5px;
 }
 
 .hero-section video {
@@ -543,7 +564,7 @@ a {
 
 .carousel2 .swiper-slide iframe {
     width: 100% !important;
-    height: 350px;
+    height: 450px;
 }
 
 .button-div2 {
@@ -739,16 +760,16 @@ a {
 
 .button-cm .cta {
     cursor: pointer;
-    font-weight: 500;
+    font-weight: 400;
     font-family: Helvetica, "sans-serif";
     transition: all .2s;
-    padding: 5px 10px;
+    padding: 10px 15px;
     border-radius: 5px;
     background: #1465bc;
     border: 1px solid transparent;
     display: flex;
     align-items: center;
-    font-size: 15px;
+    font-size: 18px;
     color: white;
 }
 
@@ -921,7 +942,15 @@ a {
     height: 500px;
     object-fit: cover;
     filter: brightness(0.8);
+}
 
+.search-cm input.p-1 {
+    outline: none !important;
+    border: 1px solid rgb(205, 205, 205);
+}
+
+.search-cm input.p-1:focus-visible {
+    outline: 1px solid rgb(96, 96, 96);
 }
 
 .our-service,
@@ -1253,12 +1282,14 @@ a {
 .contact-secbtm textarea {
     padding: 14px;
     border: none;
+    border-radius: 6px;
 }
 
-.contact-secbtm input:focus-visible .contact-secbtm textarea:focus-visible {
+.contact-secbtm input:focus-visible,
+.contact-secbtm textarea:focus-visible {
     border: none !important;
     box-shadow: none !important;
-    outline: none !important;
+    outline: 1.5px solid rgb(187, 187, 187);
 }
 
 
@@ -1273,6 +1304,7 @@ a {
 
 
 .minimal .header-bottom {
+    position: absolute!important;
     background-color: transparent !important;
     backdrop-filter: blur(0px) !important;
     padding: 2rem 0 !important;
@@ -1310,7 +1342,7 @@ a {
 }
 
 .header-bottom {
-    box-shadow: 0 2px 2px rgb(199, 199, 199);
+    box-shadow: 0 1px 1px rgb(227, 227, 227);
 }
 
 body {
@@ -1321,7 +1353,7 @@ body {
     margin: 5rem 0;
 }
 
-.team-sec .row{
+.team-sec .row {
     border-bottom: 1px solid rgb(81, 81, 81);
     margin-block: 3rem;
 }
@@ -1336,7 +1368,7 @@ body {
     width: 180px;
     height: 180px;
     padding: 15px;
-    
+
     border-radius: 50%;
     object-fit: cover;
     transition: all 300ms ease-in-out;
@@ -1381,3 +1413,4 @@ body {
     text-align: center;
     line-height: 1;
 }
+
