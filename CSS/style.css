@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 
-:root{
+:root {
     --blue-theme: #1465bc;
     --heading-font-large: 36px;
     --heading-font-small: 16px;
-    --secondary-bg:#EDF2F4;
+    --secondary-bg: #EDF2F4;
 }
 
 *,
@@ -185,6 +185,27 @@ a {
     /* top: 0; */
 }
 
+.text-animation {
+    overflow-y: hidden;
+}
+
+.text-animation h4 {
+    animation: textmove 1200ms cubic-bezier(0.43, 0.13, 0.23, 0.9);
+}
+
+@keyframes textmove {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
 .hero-section {
     width: 100%;
     height: 100vh;
@@ -206,7 +227,7 @@ a {
     font-size: clamp(30px, 5vw, 60px);
     font-weight: 700;
     color: rgb(239, 253, 255);
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
     line-height: 1.3;
     letter-spacing: 1.5px;
 }
@@ -399,7 +420,7 @@ a {
     position: absolute;
     content: '';
     inset: 0;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.7);
 
 }
 
@@ -612,7 +633,9 @@ a {
 }
 
 .click-btn2 .swiper-button-prev2,
-.click-btn2 .swiper-button-next2 {
+.swiper-button-prev4,
+.click-btn2 .swiper-button-next2,
+.swiper-button-next4 {
     background-color: black;
     color: white;
     width: 50px;
@@ -622,7 +645,9 @@ a {
 }
 
 .click-btn2 .swiper-button-prev2:hover,
-.click-btn2 .swiper-button-next2:hover {
+.swiper-button-prev4:hover,
+.click-btn2 .swiper-button-next2:hover,
+.swiper-button-next4:hover {
     background-color: rgb(45, 45, 45);
 }
 
@@ -654,7 +679,7 @@ a {
 
 
 
-.cli-carousel-sec{
+.cli-carousel-sec {
     background-color: var(--secondary-bg);
 }
 
@@ -687,7 +712,27 @@ a {
     text-align: center;
 }
 
-.swiper-container {
+.subsidiary .swiper-slide {
+    height: 350px;
+}
+
+.subsidiary .card-cm {
+    border: 1px solid rgb(217, 217, 217);
+    height: 100%;
+}
+
+.subsidiary .card-cm img {
+    height: 250px;
+}
+
+.subsidiary .card-cm h4 {
+    padding: 10px;
+    font-size: 18px;
+    line-height: 1;
+}
+
+.swiper-container,
+.swiper-subsidiary {
     max-width: 1320px;
     margin: auto;
     overflow: hidden;
@@ -791,6 +836,98 @@ a {
     }
 }
 
+
+.message-sec {
+    padding: 8rem 0;
+    max-width: 100vw;
+    overflow: hidden;
+}
+
+.message {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding-left: 60px;
+    background-color: #1A5A9D;
+   
+}
+
+
+
+.message-heading {
+    font-size: 44px;
+    font-weight: 700;
+    color: white;
+}
+
+.message-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+.message-image .image {
+    position: absolute;
+    right: -50px;
+    height: 300px;
+    max-width: 500px;
+
+}
+
+.message-image .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.message-image .image h3 {
+    position: absolute;
+    bottom: -10px;
+    left: 15px;
+    font-size: 18px;
+    padding: 4px 10px ;
+    background-color: #E41E2B;
+    color: white;
+}
+
+
+.message .content {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    justify-content: center;
+    gap: 30px;
+}
+
+.message .content h4 {
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 1.4;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+}
+
+/* 
+.message .detail {
+    margin-top: 20px;
+}
+
+.message .detail h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+}
+
+.message .detail p {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #c1c1c1;
+
+} */
+
 .button-cm .cta {
     cursor: pointer;
     font-weight: 400;
@@ -804,7 +941,26 @@ a {
     align-items: center;
     font-size: 18px;
     color: white;
+    animation: buttonmove 1500ms ease-out;
 }
+
+@keyframes buttonmove {
+    0% {
+        opacity: 0;
+        transform: translateY(60px);
+    }
+
+    50% {
+        opacity: 0;
+        transform: translateY(60px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
 
 .button-cm .cta:hover {
     background: var(--blue-theme);
@@ -1149,6 +1305,12 @@ a {
 .header-search .heading-center {
     text-align: left;
 }
+
+
+.subsidiary {
+    padding: 5rem 0;
+}
+
 
 .creation-card-cm .content-image {
     width: 100%;
