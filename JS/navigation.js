@@ -18,10 +18,10 @@ document.querySelector(".mainheader").innerHTML=`
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="http://127.0.0.1:5500/">Home</a>
+                            <a class="nav-link active" aria-current="page" href="https://risemedianetwork.netlify.app/">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="http://127.0.0.1:5500/aboutus.html">About Us</a>
+                            <a class="nav-link" href="https://risemedianetwork.netlify.app/aboutus.html">About Us</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="http://127.0.0.1:5500/team.html">Our Team</a>
@@ -68,4 +68,3 @@ document.querySelector(".mainheader").innerHTML=`
 </div>
 </div>`
 
-1
