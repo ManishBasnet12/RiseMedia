@@ -3,10 +3,10 @@ document.querySelector(".mainheader").innerHTML=`
 <div class="container-fluid">
     <div class="row">
         <div class="mail-logo nav-logo">
-            <a href="http://127.0.0.1:5500/"> <img src="/IMAGE/rise.png" alt=""></a>
+            <a href="https://risemedianetwork.netlify.app/"> <img src="/IMAGE/rise.png" alt=""></a>
         </div>
         <div class="mail-logo body-logo" >
-            <a href="http://127.0.0.1:5500/"> <img src="/IMAGE/rise2.png" alt=""></a>
+            <a href="https://risemedianetwork.netlify.app/"> <img src="/IMAGE/rise2.png" alt=""></a>
         </div>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
@@ -24,13 +24,13 @@ document.querySelector(".mainheader").innerHTML=`
                             <a class="nav-link" href="https://risemedianetwork.netlify.app/aboutus.html">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="http://127.0.0.1:5500/team.html">Our Team</a>
+                            <a class="nav-link" href="https://risemedianetwork.netlify.app/team.html">Our Team</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="http://127.0.0.1:5500/services.html">Services</a>
+                            <a class="nav-link" href="https://risemedianetwork.netlify.app/services.html">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="http://127.0.0.1:5500/creation.html">Creation</a>
+                            <a class="nav-link" href="https://risemedianetwork.netlify.app/creation.html">Creation</a>
                         </li>
                         <!-- <li class="nav-item">
                             <a class="nav-link" href="#">Gallery</a>
@@ -39,7 +39,7 @@ document.querySelector(".mainheader").innerHTML=`
                             <a class="nav-link" href="#">Advertisment</a>
                         </li> -->
                         <li class="nav-item">
-                            <a class="nav-link" href="http://127.0.0.1:5500/contact.html">Contact Us</a>
+                            <a class="nav-link" href="https://risemedianetwork.netlify.app/contact.html">Contact Us</a>
                         </li>
                 </div>
             </div>
