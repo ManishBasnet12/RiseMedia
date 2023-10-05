@@ -185,16 +185,41 @@ a {
     /* top: 0; */
 }
 
+#headernavigation{
+    animation: navanimation 1500ms cubic-bezier(0.43, 0.13, 0.23, 0.9);
+}
+
+@keyframes navanimation{
+    0%{
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    30%{
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
 .text-animation {
     overflow-y: hidden;
 }
 
 .text-animation h4 {
-    animation: textmove 1200ms cubic-bezier(0.43, 0.13, 0.23, 0.9);
+    animation: textmove 2000ms cubic-bezier(0.43, 0.13, 0.23, 0.9);
 }
 
 @keyframes textmove {
     0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    30%{
         opacity: 0;
         transform: translateY(100px);
     }
@@ -941,7 +966,7 @@ a {
     align-items: center;
     font-size: 18px;
     color: white;
-    animation: buttonmove 1500ms ease-out;
+    animation: buttonmove 2000ms ease-out;
 }
 
 @keyframes buttonmove {
@@ -950,7 +975,7 @@ a {
         transform: translateY(60px);
     }
 
-    50% {
+    70% {
         opacity: 0;
         transform: translateY(60px);
     }
