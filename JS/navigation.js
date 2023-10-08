@@ -67,4 +67,3 @@ document.querySelector(".mainheader").innerHTML=`
     </div>
 </div>
 </div>`
-
