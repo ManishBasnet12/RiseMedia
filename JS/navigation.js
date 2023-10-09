@@ -10,9 +10,7 @@ document.querySelector(".mainheader").innerHTML=`
         </div>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -67,24 +65,39 @@ document.querySelector(".mainheader").innerHTML=`
     </div>
 </div>
 </div>
-<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+<div class="offcanvas offcanvas-start navbar-offcanvas" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
   <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <div class="logo"><img src="/IMAGE/rise.png"></div>
+    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body">
-    <div>
-      Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
-    </div>
-    <div class="dropdown mt-3">
-      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-        Dropdown button
-      </button>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#">Action</a></li>
-        <li><a class="dropdown-item" href="#">Another action</a></li>
-        <li><a class="dropdown-item" href="#">Something else here</a></li>
-      </ul>
+   
+      <nav>
+        <ul>
+            <a> <li> <i class="fa-solid fa-house"></i>Home</li></a>
+            <a><li><i class="fa-regular fa-address-card"></i>About Us</li></a>
+            <a><li><i class="fa-solid fa-users"></i>Our Team</li></a>
+            <a><li><i class="fa-solid fa-server"></i>Services</li></a>
+            <a><li><i class="fa-brands fa-creative-commons-sampling"></i>Creation</li></a>
+            <a><li><i class="fa-solid fa-address-card"></i>Contact Us</li></a>
+        </ul>
+      </nav>
+    <div class="offcanvas-icon">
+    <div class="follow-us justify-content-center">
+                               
+                                <div class="social-icon">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </div>
+                                <div class="social-icon">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </div>
+                                <div class="social-icon">
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                </div>
+                                <div class="social-icon">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </div>
+                            </div>
     </div>
   </div>
 </div>
