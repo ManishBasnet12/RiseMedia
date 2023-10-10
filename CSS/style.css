@@ -225,6 +225,7 @@ a {
 .text-animation {
     overflow-y: hidden;
 }
+
 /* 
 .text-animation h4 {
     animation: textmove 2000ms cubic-bezier(0.43, 0.13, 0.23, 0.9);
@@ -347,6 +348,8 @@ a {
 
 
 
+
+
 /* herosection */
 
 
@@ -364,9 +367,9 @@ a {
 
 
 
-.image-box{
+.image-l {
     overflow: hidden;
-    
+
 }
 
 .about-us-single .row {
@@ -763,6 +766,40 @@ a {
 .carousel3 .swiper-slide .content h3 {
     font-size: 16px;
     text-align: center;
+}
+
+.p-card{
+    padding: 30px;
+    background-color: white;
+    border-radius: 16px;
+    border: 1px solid rgb(238, 238, 238);
+}
+
+.p-card-img{
+    background-color: #f9faff;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.p-card a{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.p-card button{
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 8px;
+    padding: 5px 10px;
+    background-color: white;
+}
+
+.p-card button:hover{
+    background-color: rgba(245, 245, 245,0.5);
 }
 
 .subsidiary .swiper-slide {
@@ -1464,6 +1501,19 @@ a {
     padding: 5rem 0;
 }
 
+.creation-card-cm{
+    margin-bottom: 50px;
+}
+
+.sub-heading{
+    margin-bottom: 10px;
+}
+
+.sub-heading h4{
+    font-size: 22px;
+    text-transform: capitalize;
+    font-weight: 700;
+}
 
 .creation-card-cm .content-image {
     width: 100%;
@@ -1886,6 +1936,17 @@ body {
     aspect-ratio: 5 /4;
     overflow: hidden;
     border-radius: 8px;
+    position: relative;
+}
+
+.image-sec .image-box .img-cat {
+    position: absolute;
+    z-index: 1;
+    bottom: 30px;
+    left: 20px;
+    background-color: black;
+    color: white;
+    padding:5px 12px;
 }
 
 .image-sec img {
@@ -1924,10 +1985,10 @@ body {
     padding: 15px 10px;
     transition: all 200ms ease-in-out;
     border-radius: 16px;
-    border: 1px solid rgba(98, 98, 98,0);
+    border: 1px solid rgba(98, 98, 98, 0);
 }
 
-.navbar-offcanvas nav li:hover{
+.navbar-offcanvas nav li:hover {
     color: rgb(255, 255, 255);
     background-color: #3d3d3d;
     border: 1px solid #565656;
@@ -1941,11 +2002,11 @@ body {
     flex-direction: column;
 }
 
-.navbar-offcanvas nav ul i{
+.navbar-offcanvas nav ul i {
     margin-right: 20px;
 }
 
-.navbar-offcanvas .offcanvas-header{
+.navbar-offcanvas .offcanvas-header {
     border-bottom: 1px solid #393939;
     margin: 20px;
 }
@@ -1955,17 +2016,17 @@ body {
     border-bottom: 1px solid #393939;
 }
 
-.offcanvas-icon{
+.offcanvas-icon {
     border-top: 1px solid #393939;
     margin-top: 80px;
     padding-top: 30px;
 }
 
-.offcanvas-icon .social-icon{
+.offcanvas-icon .social-icon {
     background-color: #2d2d2d;
 }
 
 
-.offcanvas-icon .social-icon i{
+.offcanvas-icon .social-icon i {
     color: rgb(141, 141, 141);
 }
