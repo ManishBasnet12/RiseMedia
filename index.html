@@ -69,8 +69,9 @@
             <div class="container about-us-single ">
                 <div class="row">
                     <div class="col-lg-6">
-                        <div class="image">
-                            <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
+                        <div class="image image-box">
+                            <img class="image-m"
+                                src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
                                 alt="">
                         </div>
                     </div>
@@ -886,6 +887,8 @@
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.4/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/ScrollTrigger.min.js"></script>
 
     <script>
         const lightbox = GLightbox({
@@ -1039,6 +1042,51 @@
                     slidesPerView: 2
                 }
             }
+        });
+    </script>
+    <script>
+
+        let tl = gsap.timeline();
+        tl.from(".text-animation>h4", {
+            delay: 0.25,
+            duration: 1.2,
+            y: 150,
+            autoAlpha: 0,
+            ease: Power3.inout,
+            stagger: {
+                each: 1,
+                amount: 0.2
+            }
+        });
+
+        gsap.registerPlugin(ScrollTrigger);
+
+        let revealContainers = document.querySelectorAll(".image-box");
+
+        revealContainers.forEach((container) => {
+            let image = container.querySelector(".image-m");
+            let i1 = gsap.timeline({
+                scrollTrigger: {
+                    trigger: container,
+                      once: true,
+                    // start: "top-=40px center+=100px",
+                    end: "center center",
+                    toggleActions: "restart none none reset"
+                }
+            });
+
+            i1.set(container, { autoAlpha: 1 });
+            i1.from(container, 0.5, {
+                yPercent: 100,
+                // scale:0.8,
+                ease: Power2.inout
+            });
+            i1.from(image, 0.5, {
+                yPercent: -100,
+                scale: 1.4,
+                delay: -0.5,
+                ease: Power2.inout
+            });
         });
     </script>
 

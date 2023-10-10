@@ -225,7 +225,7 @@ a {
 .text-animation {
     overflow-y: hidden;
 }
-
+/* 
 .text-animation h4 {
     animation: textmove 2000ms cubic-bezier(0.43, 0.13, 0.23, 0.9);
 }
@@ -245,7 +245,7 @@ a {
         opacity: 1;
         transform: translateY(0px);
     }
-}
+} */
 
 
 .hero-section {
@@ -364,7 +364,10 @@ a {
 
 
 
-
+.image-box{
+    overflow: hidden;
+    
+}
 
 .about-us-single .row {
     margin-block: 6rem;
