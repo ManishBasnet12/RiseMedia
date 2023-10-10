@@ -74,12 +74,12 @@ document.querySelector(".mainheader").innerHTML=`
    
       <nav>
         <ul>
-            <a> <li> <i class="fa-solid fa-house"></i>Home</li></a>
-            <a><li><i class="fa-regular fa-address-card"></i>About Us</li></a>
-            <a><li><i class="fa-solid fa-users"></i>Our Team</li></a>
-            <a><li><i class="fa-solid fa-server"></i>Services</li></a>
-            <a><li><i class="fa-brands fa-creative-commons-sampling"></i>Creation</li></a>
-            <a><li><i class="fa-solid fa-address-card"></i>Contact Us</li></a>
+            <a href="https://risemedianetwork.netlify.app/"> <li> <i class="fa-solid fa-house"></i>Home</li></a>
+            <a href="https://risemedianetwork.netlify.app/aboutus.html"><li><i class="fa-regular fa-address-card"></i>About Us</li></a>
+            <a href="https://risemedianetwork.netlify.app/team.html"><li><i class="fa-solid fa-users"></i>Our Team</li></a>
+            <a href="https://risemedianetwork.netlify.app/services.html"><li><i class="fa-solid fa-server"></i>Services</li></a>
+            <a href="https://risemedianetwork.netlify.app/creation.html"><li><i class="fa-brands fa-creative-commons-sampling"></i>Creation</li></a>
+            <a href="https://risemedianetwork.netlify.app/contact.html"><li><i class="fa-solid fa-address-card"></i>Contact Us</li></a>
         </ul>
       </nav>
     <div class="offcanvas-icon">
