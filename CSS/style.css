@@ -651,7 +651,7 @@ a {
     opacity: 1;
 
 }
-
+/* 
 .upcoming-movies .swiper-slide.swiper-slide-active .play-btn {
     transition-delay: 500ms;
     opacity: 1;
@@ -659,7 +659,7 @@ a {
 
 .upcoming-movies .swiper-slide.swiper-slide-active .active-img {
     transform: scale(1.2);
-}
+} */
 
 
 .nav-tabs{
