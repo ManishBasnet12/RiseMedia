@@ -2134,9 +2134,10 @@
             let i1 = gsap.timeline({
                 scrollTrigger: {
                     trigger: container,
-                    once: true,
+                    // once: true,
+                    start: "top bottom", // Adjust the start property
                     end: "center center",
-                    toggleActions: "restart none none reset"
+                    // toggleActions: "restart none none reset"
                 }
             });
 
