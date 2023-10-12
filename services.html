@@ -44,8 +44,8 @@
                     <div class="service-cards ">
                         <div class="row service-card justify-content-center">
                             <div class="col-lg-6">
-                                <div class="service-card-image">
-                                    <img src="https://images.unsplash.com/photo-1524103416206-a67f05a8154b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                                <div class=" image-l">
+                                    <img class="image-m" src="https://images.unsplash.com/photo-1524103416206-a67f05a8154b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
                                         alt="">
                                 </div>
                             </div>
@@ -73,8 +73,8 @@
                         </div>
                         <div class="row service-card-reverse justify-content-center">
                             <div class="col-lg-6">
-                                <div class="service-card-image">
-                                    <img src="https://images.unsplash.com/photo-1630673287511-4d477913d7a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                                <div class=" image-l">
+                                    <img class="image-m" src="https://images.unsplash.com/photo-1630673287511-4d477913d7a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
                                         alt="">
                                 </div>
                             </div>
@@ -102,8 +102,8 @@
                         </div>
                         <div class="row service-card justify-content-center">
                             <div class="col-lg-6">
-                                <div class="service-card-image">
-                                    <img src="https://images.unsplash.com/photo-1557683311-eac922347aa1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2029&q=80"
+                                <div class="image-l">
+                                    <img class="image-m" src="https://images.unsplash.com/photo-1557683311-eac922347aa1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2029&q=80"
                                         alt="">
                                 </div>
                             </div>
@@ -131,8 +131,8 @@
                         </div>
                         <div class="row service-card-reverse justify-content-center">
                             <div class="col-lg-6">
-                                <div class="service-card-image">
-                                    <img src="https://images.unsplash.com/photo-1557683311-eac922347aa1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2029&q=80"
+                                <div class="image-l">
+                                    <img class="image-m" src="https://images.unsplash.com/photo-1557683311-eac922347aa1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2029&q=80"
                                         alt="">
                                 </div>
                             </div>
@@ -160,8 +160,8 @@
                         </div>
                         <div class="row service-card justify-content-center">
                             <div class="col-lg-6">
-                                <div class="service-card-image">
-                                    <img src="https://images.unsplash.com/photo-1557683311-eac922347aa1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2029&q=80"
+                                <div class="image-l">
+                                    <img class="image-m" src="https://images.unsplash.com/photo-1557683311-eac922347aa1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2029&q=80"
                                         alt="">
                                 </div>
                             </div>
@@ -355,9 +355,56 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.4/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/ScrollTrigger.min.js"></script>
 
+    <script>
 
+        // let tl = gsap.timeline();
+        // tl.from(".text-animation>h4", {
+        //     delay: 0.35,
+        //     opacity:0,
+        //     duration: 1.2,
+        //     y: 150,
+        //     autoAlpha: 0,
+        //     ease: Power4.inout,
+        //     stagger: {
+        //         each: 1,
+        //         amount: 0.25
+        //     }
+        // });
 
+        gsap.registerPlugin(ScrollTrigger);
+
+        let revealContainers = document.querySelectorAll(".image-l");
+
+        revealContainers.forEach((container) => {
+            let image = container.querySelector(".image-m");
+            let i1 = gsap.timeline({
+                scrollTrigger: {
+                    trigger: container,
+                    once: true,
+                    // start: "top-=40px center+=100px",
+                    end: "center center",
+                    toggleActions: "restart none none reset"
+                }
+            });
+
+            i1.set(container, { autoAlpha: 1 });
+            i1.from(container, 0.4, {
+                opacity:0,
+                yPercent: 100,
+                // scale:0.8,
+                ease: Power4.inout
+            });
+            i1.from(image, 0.4, {
+                yPercent: -100,
+                scale: 1.3,
+                delay: -0.4,
+                ease: Power4.inout
+            });
+        });
+    </script>
     <script src="/JS/footer.js">
 
     </script>
